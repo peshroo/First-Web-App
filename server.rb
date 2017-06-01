@@ -8,6 +8,10 @@ get '/home' do
    erb :index
 end
 
+get '/gallery' do
+  redirect to('/portfolio')
+end
+
 get '/portfolio' do
   erb :gallery
 end
